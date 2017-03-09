@@ -1,11 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{C636D6A9-36BC-469A-9ABE-1D118F2D7596}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ObserverWithFrameWork", "ObserverWithFrameWork\ObserverWithFrameWork.csproj", "{38CC8BDA-B744-4FD5-B2A0-E0854966C853}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{F23853B1-EB1D-4ED5-A270-E577A88CD405}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{EDFCE55D-CBB8-4459-B2D5-641A330CB827}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{2DA89959-339D-4BA9-9471-F74D555C8B61}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +30,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C636D6A9-36BC-469A-9ABE-1D118F2D7596} = {F23853B1-EB1D-4ED5-A270-E577A88CD405}
+		{38CC8BDA-B744-4FD5-B2A0-E0854966C853} = {F23853B1-EB1D-4ED5-A270-E577A88CD405}
 	EndGlobalSection
 EndGlobal
