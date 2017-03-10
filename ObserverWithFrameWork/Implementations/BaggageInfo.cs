@@ -1,4 +1,4 @@
-﻿namespace Observer.Implementations
+﻿namespace ObserverWithFramework.Implementations
 {
     public class BaggageInfo
     {

@@ -1,12 +1,8 @@
-﻿using Observer.Implementations;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ObserverWithFrameWork.Implementations
+﻿namespace ObserverWithFramework.Implementations
 {
+    using System;
+    using System.Collections.Generic;
+
     public class BaggageHandler : IObservable<BaggageInfo>
     {
         private List<IObserver<BaggageInfo>> observers;

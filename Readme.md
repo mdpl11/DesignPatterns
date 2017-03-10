@@ -16,6 +16,12 @@ Existen una serie de categorías para definir la función que realizaba un patrón 
 
 Son aquellos en los que se delegaba la instanciación de un objeto en otro en lugar de recurrir a un simple new().
 
+## Builder (constructor)
+
+Separar la construcción de un objeto complejo de su representación, de modo que el mismo proceso de construcción pueda crear representaciones diferentes.
+
+![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Builder/builder.png)
+
 # Patrones Estructurales
 
 # Patrones de Comportamiento

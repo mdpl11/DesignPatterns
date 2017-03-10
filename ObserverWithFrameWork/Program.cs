@@ -1,4 +1,4 @@
-﻿namespace ObserverWithFrameWork
+﻿namespace ObserverWithFramework
 {
     using Implementations;
     using System;
