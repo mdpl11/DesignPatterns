@@ -22,6 +22,19 @@ Separar la construcción de un objeto complejo de su representación, de modo que 
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Builder/builder.png)
 
+## Prototype
+
+Especificar el tipo de objetos que se crearán utilizando una instancia prototipada y crear nuevos objetos realizando copias de ese prototipo. El concepto de este patrón es simple: en lugar de crear un objeto, se clona, es decir, se realiza una copia exacta de otro objeto dado, denominado prototipo. En .NET este proceso es sencillo, ya que nos ofrece la interfaz ICloneable que expone el método Clone(), método en el que habrá que codificar el proceso de copia. Ademas .NET también ofrece un método, MemberwiseClone(), que automáticamente realiza una copia del objeto por nosotros, evitándonos el proceso de copiar elemento por elemento de forma manual.
+
+![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/prototype.png)
+
+#### Clonación superficial y clonación profunda
+
+Cuando invocamos el método MemberwiseClone() observamos que en su descripción indicaba que se realizaba una clonación shallow o superficial. Esto significa que el clonado se realiza a nivel de bits, por lo que los objetos contenidos dentro del objeto a clonar no se clonarán también, sino que se clonará únicamente la referencia del objeto. Por lo tanto, ambos objetos clonados apuntarán al mismo objeto. Esto es lo que se conoce como clonación superficial. El proceso por el cual se clonan los objetos incluidos en el objeto a clonar en lugar de copiar sus referencias se denomina clonación profunda.
+
+![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionSuperficial.png)
+![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionProfunda.png)
+
 # Patrones Estructurales
 
 # Patrones de Comportamiento
