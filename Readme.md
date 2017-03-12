@@ -54,8 +54,8 @@ El nombre de este patrón evoca la posibilidad de realizar un cambio de estrateg
 
 ## Principios SOLID
 
-Responsabilidad única (Single responsibility principle): Un objeto sólo debe tener una única responsabilidad.
-Abierto/cerrado (Open/closed principle): Una clase debe estar abierta para su extensión, pero cerrada para su modificación.
-Principio de sustitución de Liskov (Liskov substitution principle): Una clase padre siempre debe poder ser sustituida por una clase hija sin alterar el comportamiento del programa.
-Segregación de la Interfaz (Interface segregation principle): Es preferible contar con muchas interfaces específicas que con una de propósito general.
-Inversión de dependencia  (Dependency inversion principle): Se debe depender de abstracciones, no de concreciones.
+  * **Responsabilidad única** `(Single responsibility principle)`: Un objeto sólo debe tener una única responsabilidad.
+  * **Abierto/cerrado** `(Open/closed principle)`: Una clase debe estar abierta para su extensión, pero cerrada para su modificación.
+  * **Principio de sustitución de Liskov** `(Liskov substitution principle)`: Una clase padre siempre debe poder ser sustituida por una clase hija sin alterar el comportamiento del programa.
+  * **Segregación de la Interfaz** `(Interface segregation principle)`: Es preferible contar con muchas interfaces específicas que con una de propósito general.
+  * **Inversión de dependencia**  `(Dependency inversion principle)`: Se debe depender de abstracciones, no de concreciones.
