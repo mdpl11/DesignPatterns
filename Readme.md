@@ -1,36 +1,36 @@
-# Patrones de DiseÒo
+# Patrones de Dise√±o
 
-Un patrÛn de diseÒo no es m·s que una ìrecetaî que trata de proporcionar una soluciÛn genÈrica a un problema concreto que se repite con frecuencia durante el desarrollo de software.
+Un patr√≥n de dise√±o no es m√°s que una ‚Äúreceta‚Äù que trata de proporcionar una soluci√≥n gen√©rica a un problema concreto que se repite con frecuencia durante el desarrollo de software.
 
-## CategorÌas de patrones de diseÒo
+## Categor√≠as de patrones de dise√±o
 
-Existen una serie de categorÌas para definir la funciÛn que realizaba un patrÛn de diseÒo. A grandes rasgos, los patrones se dividen en tres grupos:
+Existen una serie de categor√≠as para definir la funci√≥n que realizaba un patr√≥n de dise√±o. A grandes rasgos, los patrones se dividen en tres grupos:
 
-|Patrones|DescripciÛn|
+|Patrones|Descripci√≥n|
 |---------|-----------|.
-|__Creacionales__|Se trata de un conjunto de patrones cuyo objetivo es el de instanciar objeto, en lugar de recurrir a la instanciaciÛn directa.|
-|__Estructurales__|Definen una composiciÛn de objetos que, a travÈs de especializaciÛn, proporcionan una funcionalidad determinada.|
-|__De Comportamiento__|Se centran en cÛmo interact˙an e intercambian informaciÛn unos objetos con otros de una manera definida.|
+|__Creacionales__|Se trata de un conjunto de patrones cuyo objetivo es el de instanciar objeto, en lugar de recurrir a la instanciaci√≥n directa.|
+|__Estructurales__|Definen una composici√≥n de objetos que, a trav√©s de especializaci√≥n, proporcionan una funcionalidad determinada.|
+|__De Comportamiento__|Se centran en c√≥mo interact√∫an e intercambian informaci√≥n unos objetos con otros de una manera definida.|
 
-# Patrones de CreaciÛn
+# Patrones de Creaci√≥n
 
-Son aquellos en los que se delegaba la instanciaciÛn de un objeto en otro en lugar de recurrir a un simple new().
+Son aquellos en los que se delegaba la instanciaci√≥n de un objeto en otro en lugar de recurrir a un simple new().
 
 ## Builder (constructor)
 
-Separar la construcciÛn de un objeto complejo de su representaciÛn, de modo que el mismo proceso de construcciÛn pueda crear representaciones diferentes.
+Separar la construcci√≥n de un objeto complejo de su representaci√≥n, de modo que el mismo proceso de construcci√≥n pueda crear representaciones diferentes.
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Builder/builder.png)
 
 ## Prototype
 
-Especificar el tipo de objetos que se crear·n utilizando una instancia prototipada y crear nuevos objetos realizando copias de ese prototipo. El concepto de este patrÛn es simple: en lugar de crear un objeto, se clona, es decir, se realiza una copia exacta de otro objeto dado, denominado prototipo. En .NET este proceso es sencillo, ya que nos ofrece la interfaz ICloneable que expone el mÈtodo Clone(), mÈtodo en el que habr· que codificar el proceso de copia. Ademas .NET tambiÈn ofrece un mÈtodo, MemberwiseClone(), que autom·ticamente realiza una copia del objeto por nosotros, evit·ndonos el proceso de copiar elemento por elemento de forma manual.
+Especificar el tipo de objetos que se crear√°n utilizando una instancia prototipada y crear nuevos objetos realizando copias de ese prototipo. El concepto de este patr√≥n es simple: en lugar de crear un objeto, se clona, es decir, se realiza una copia exacta de otro objeto dado, denominado prototipo. En .NET este proceso es sencillo, ya que nos ofrece la interfaz ICloneable que expone el m√©todo Clone(), m√©todo en el que habr√° que codificar el proceso de copia. Ademas .NET tambi√©n ofrece un m√©todo, MemberwiseClone(), que autom√°ticamente realiza una copia del objeto por nosotros, evit√°ndonos el proceso de copiar elemento por elemento de forma manual.
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/prototype.png)
 
-#### ClonaciÛn superficial y clonaciÛn profunda
+#### Clonaci√≥n superficial y clonaci√≥n profunda
 
-Cuando invocamos el mÈtodo MemberwiseClone() observamos que en su descripciÛn indicaba que se realizaba una clonaciÛn shallow o superficial. Esto significa que el clonado se realiza a nivel de bits, por lo que los objetos contenidos dentro del objeto a clonar no se clonar·n tambiÈn, sino que se clonar· ˙nicamente la referencia del objeto. Por lo tanto, ambos objetos clonados apuntar·n al mismo objeto. Esto es lo que se conoce como clonaciÛn superficial. El proceso por el cual se clonan los objetos incluidos en el objeto a clonar en lugar de copiar sus referencias se denomina clonaciÛn profunda.
+Cuando invocamos el m√©todo MemberwiseClone() observamos que en su descripci√≥n indicaba que se realizaba una clonaci√≥n shallow o superficial. Esto significa que el clonado se realiza a nivel de bits, por lo que los objetos contenidos dentro del objeto a clonar no se clonar√°n tambi√©n, sino que se clonar√° √∫nicamente la referencia del objeto. Por lo tanto, ambos objetos clonados apuntar√°n al mismo objeto. Esto es lo que se conoce como clonaci√≥n superficial. El proceso por el cual se clonan los objetos incluidos en el objeto a clonar en lugar de copiar sus referencias se denomina clonaci√≥n profunda.
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionSuperficial.png)
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionProfunda.png)
@@ -41,13 +41,21 @@ Cuando invocamos el mÈtodo MemberwiseClone() observamos que en su descripciÛn in
 
 ## Observer
 
-Definir una dependencia uno-a-muchos entre objetos de forma de que, cuando el estado de uno de ellos cambia, todos los objetos dependientes son notificados y actualizados de forma autom·tica.
+Definir una dependencia uno-a-muchos entre objetos de forma de que, cuando el estado de uno de ellos cambia, todos los objetos dependientes son notificados y actualizados de forma autom√°tica.
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Observer/Observer.png)
 
 ## Strategy
 
 Definir una familia de algoritmos, encapsular cada uno de ellos y hacerlos intercambiables. Strategy permite cambiar el algoritmo independientemente de los clientes que lo utilicen.
-El nombre de este patrÛn evoca la posibilidad de realizar un cambio de estrategia en tiempo de ejecuciÛn sustituyendo un objeto que se encargar· de implementarla.
+El nombre de este patr√≥n evoca la posibilidad de realizar un cambio de estrategia en tiempo de ejecuci√≥n sustituyendo un objeto que se encargar√° de implementarla.
 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Strategy/Strategy.png)
+
+## Principios SOLID
+
+Responsabilidad √∫nica (Single responsibility principle): Un objeto s√≥lo debe tener una √∫nica responsabilidad.
+Abierto/cerrado (Open/closed principle): Una clase debe estar abierta para su extensi√≥n, pero cerrada para su modificaci√≥n.
+Principio de sustituci√≥n de Liskov (Liskov substitution principle): Una clase padre siempre debe poder ser sustituida por una clase hija sin alterar el comportamiento del programa.
+Segregaci√≥n de la Interfaz (Interface segregation principle): Es preferible contar con muchas interfaces espec√≠ficas que con una de prop√≥sito general.
+Inversi√≥n de dependencia  (Dependency inversion principle): Se debe depender de abstracciones, no de concreciones.
