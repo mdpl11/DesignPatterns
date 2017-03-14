@@ -7,7 +7,7 @@ Un patrón de diseño no es más que una “receta” que trata de proporcionar 
 Existen una serie de categorías para definir la función que realizaba un patrón de diseño. A grandes rasgos, los patrones se dividen en tres grupos:
 
 |Patrones|Descripción|
-|---------|-----------|.
+|---------|-----------|
 |__Creacionales__|Se trata de un conjunto de patrones cuyo objetivo es el de instanciar objeto, en lugar de recurrir a la instanciación directa.|
 |__Estructurales__|Definen una composición de objetos que, a través de especialización, proporcionan una funcionalidad determinada.|
 |__De Comportamiento__|Se centran en cómo interactúan e intercambian información unos objetos con otros de una manera definida.|
