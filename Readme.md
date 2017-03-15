@@ -35,6 +35,12 @@ Cuando invocamos el método MemberwiseClone() observamos que en su descripción 
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionSuperficial.png)
 ![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Prototype/ClonacionProfunda.png)
 
+## Singleton
+
+Asegurarse que una clase tiene una única instancia, proporcionando acceso global a ella. Hay clases que deben instanciarse una única vez. El acceso a un sistema de archivos, a la cola de impresión o al gestor de ventanas del sistema operativo debería realizarse por un único objeto, siendo labor de la propia clase el controlar que la instancia sea única. Por norma general, esta clase será accesible de forma global, y el proceso de instanciado no suele requerir parámetros.
+
+![alt tag](https://raw.githubusercontent.com/mdpl11/DesignPatterns/master/Singleton/Singleton.png)
+
 # Patrones Estructurales
 
 # Patrones de Comportamiento
